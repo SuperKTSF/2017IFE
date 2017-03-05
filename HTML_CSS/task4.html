@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .box-set {
+        background: #e8eae9;
+        height:200px;
+        position: relative;
+
+    }
+    .box {
+        background: #8ec63f;
+        height: 100px;
+        position: fixed;
+        width: 200px;
+    }
+    .box-1 {
+        top: 20px;
+    }
+    .box-2 {
+        left: 40px;
+    }
+    .box-3 {
+        bottom: -10px;
+        right: 20px;
+    }
+    footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right:0;
+        background:#DDDDDD;
+    }
+
+
+    /* “clearfix”技巧是基于在父元素上使用“:before”和“:after”两个伪类
+
+        .box-set:before,
+        .box-set:after {
+            content: "";
+            display: table;
+        }
+        .box-set:after {
+            clear: both;
+        }
+        .box-set {
+            *zoom: 1;
+        }
+
+        #null{
+            clear:both;
+        }*/
+
+
+</style>
+<div class="box-set">
+    <div class="box box-1">Box 1</div>
+    <div class="box box-2">Box 2</div>
+    <div class="box box-3">Box 3</div>
+    <footer >abc</footer>
+    <!--<div id="null"></div>  在容器结束前添加一个空标签-->
+</div>
+
+
+
+
+
+</body>
+</html>
